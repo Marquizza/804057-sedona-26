@@ -8,15 +8,15 @@
   	<header class="main-header">
   		<nav class="main-navigator">
   			<a href="index.html">
-  				<img src="#" width="" height="" alt="Логотип города Седоны">  			
+  				<img src="#" width="" height="" alt="Логотип города Седоны">
   			</a>
   			<ul class="site-navigation">
   				<li><a href="#">Информация</a></li>
   				<li><a href="#">Фото и видео</a></li>
   				<li><a href="#">Карта штата</a></li>
   				<li><a>Гостиницы</a></li>
-  			</ul>  			
-  		</nav>  		
+  			</ul>
+  		</nav>
   	</header>
   	<main class="container">
   		<section>
@@ -26,13 +26,19 @@
   		<div>
   			<p>Найдено: 3</p>
   			<ul>
-  				<li><span>Сортировка:</span></li>
+  				<li>Сортировка:</li>
+<!-- span не нужен -->
   				<li><a href="#">По цене</a></li>
   				<li><a href="#">По типу</a></li>
   				<li><a href="#">По рейтингу</a></li>
   			</ul>
   			<div>
   				<!-- Здесь будут две маленькие иконки-->
+<!-- Это тоже ссылки. Они сортируют по убыванию и по возростанию -->
+           <ul>
+             <li><a href="#"><img src="" width="" height="" alt="Сортировка от меньшего к большему"></a></li>
+             <li><a href="#"><img src="" width="" height="" alt="Сортировка от большего к меньшему"></a></li>
+           </ul>
   			</div>
   		</div>
   		<section>
@@ -51,12 +57,16 @@
   					    <span>От 4000 Р.</span>
   					</p>
   					<p class="catalog-item-details">
-  						<button type="button">Подробнее</button>
-  						<button type="button">Забронировать</button>
+  						<a class="button">Подробнее</a>
+  						<a class="button">Забронировать</a>
+<!-- "Подробнее" и "Забронировать" ссылки -->
   					</p>
   					<div>
   				        <!-- Здесь будут иконки рейтинка-->
-  			        </div>
+<!-- Для иконок рейтинга нужно предусмотреть разметку (p для звездочек и p для рейтинга) -->
+              <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
+              <p>Рейтинг: 8,5</p>
+  			     </div>
   				</li>
   				<!-- 2 отель -->
   				<li class="catalog-item">
@@ -71,12 +81,14 @@
   					    <span>От 3000 Р.</span>
   					</p>
   					<p class="catalog-item-details">
-  						<button type="button">Подробнее</button>
-  						<button type="button">Забронировать</button>
+  						<a class="button">Подробнее</a>
+              <a class="button">Забронировать</a>
   					</p>
   					<div>
   				        <!-- Здесь будут иконки рейтинка-->
-  			        </div>
+              <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
+              <p>Рейтинг: 8,9</p>
+  			     </div>
   				</li>
   				<!-- 3 отель -->
   				<li class="catalog-item">
@@ -91,28 +103,30 @@
   					    <span>От 2000 Р.</span>
   					</p>
   					<p class="catalog-item-details">
-  						<button type="button">Подробнее</button>
-  						<button type="button">Забронировать</button>
+  						<a class="button">Подробнее</a>
+              <a class="button">Забронировать</a>
   					</p>
   					<div>
   				        <!-- Здесь будут иконки рейтинка-->
-  			        </div>
+              <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
+              <p>Рейтинг: 9,2</p>
+  			     </div>
   				</li>
   			</ul>
   		</section>
   	</main>
   </body>
   <footer>
+
+<!-- По футеру замечания в индексе -->
   		<p>
             <a href="#">#visitSEDONA</a>
-        </p>
-  		<div>
+        </p>  		
   			<ul>
   				<li><a href="#">Твиттер</a></li>
   				<li><a href="#">Фейсбук</a></li>
   				<li><a href="#">Ютуб</a></li>
-  			</ul>
-  		</div>
+  			</ul>  		
   		<p>
   			Website by
   			<a href="">
