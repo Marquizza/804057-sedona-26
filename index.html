@@ -18,7 +18,7 @@
   			</ul>
         <div class="promo">
           <!-- Здесь будет большая промо картинка -->
-<!-- Здесь должна быть картинка с текстом Welcome Sedona, размеченная тегом img. Она должна растягивать по высоте весь этот блок, а изображение гор будет на бекграунде. -->
+<!-- Сюда в cSS впишу картинку на бекграунд -->
            <img src="img/welcome.svg" width="459" height="100%353" alt="Welcome to Sedona">
         </div>
   		</nav>
@@ -96,7 +96,28 @@
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button type="button">Поиск гостиницы в Седоне</button>
             <div>
-            <!-- Здесь будет форма поиска гостиницы-->
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <!-- Данные ниже лучше разбивать с помощью тега Р или лучше дивами? Сделала через Р. -->
+              <p>
+                <!-- Класс date впишет картинку в поле-->
+                <label for="date-on">Дата заезда</label>
+                <input type="text" name="date-on"  class="date id="date-on" placeholder="24 апреля 2017">
+              </p>
+              <p>
+                <label for="date-off">Дата выезда</label>
+                <input type="text" name="date-off" class="date id="date-off" placeholder="4 июля 2017">              
+              </p>
+              <!-- Не уверена в правильности создания числового поля ниже. Тут внешний вид делается с помощью css или JS? Не нашла другого способа отображения как на макете.-->
+              <p class="half-left">
+                <label for="adults">Взрослые</label>
+                <input type="number" id="adults" min="0" max="1000">
+              </p>
+              <p class="half-right">
+                <label for="children">Дети</label>
+                <input type="number" id="children" min="0" max="1000">
+              </p>
+              <button type="submit">Найти</button>
+            </form>
             </div>
   		</section>
         <section class="map">
@@ -115,7 +136,7 @@
   				<li><a href="#">Ютуб</a></li>
   			</ul>  		
   		<p>
-        <!-- НЕ ОТОБРАЖАЕТСЯ КАРТИНКА ниже. Не могу понять почему.   -->
+        <!-- НЕ ОТОБРАЖАЕТСЯ КАРТИНКА ниже. Не могу понять почему??   -->
   			Website by
   			<a href="">
   				<img src="img/html-academy.svg" width="115" height="74" alt="Логотип HTMLacademy">

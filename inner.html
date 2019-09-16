@@ -21,7 +21,43 @@
   	<main class="container">
   		<section>
   			<h1 class="visually-hidden">Отели Седоны</h1>
-  			  <!-- Здесь будет форма поиска жилья-->
+        <!-- каждый отсек форм в див надо или нет? Пока не оборачивала в див -->
+  			  <form action="https://echo.htmlacademy.ru" method="get">           
+            <fieldset>
+              <legend>Инфраструктура</legend>
+              <ul>          
+                <li class="folder-option">
+                  <label><input type="checkbox" name="pool" checked>Бассейн</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="parking">Парковка</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset> 
+            <fieldset>
+              <legend>Тип жилья</legend>
+              <ul>          
+                <li class="folder-option">
+                  <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="motel" checked>Мотель</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="apartments" checked></label>Апартаменты
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <!-- Двойной ползунок делается только в JS? или есть другие варианты? Сделала одинарный, пока не нашла как делается двойной-->
+              <legend>Стоимость в сутки (Р):</legend>
+              <input type="range" name="cost-range">
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
   		</section>
   		<div>
   			<p>Найдено: 3</p>
@@ -59,10 +95,9 @@
   					<p class="catalog-item-details">
   						<a class="button">Подробнее</a>
   						<a class="button">Забронировать</a>
-<!-- "Подробнее" и "Забронировать" ссылки -->
   					</p>
   					<div>
-  				        <!-- Здесь будут иконки рейтинка В CSS?-->
+  				        <!-- Здесь будут иконки рейтинка В CSS-->
 <!-- Для иконок рейтинга нужно предусмотреть разметку (p для звездочек и p для рейтинга) -->
               <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
               <p>Рейтинг: 8,5</p>
@@ -85,7 +120,7 @@
               <a class="button">Забронировать</a>
   					</p>
   					<div>
-  				        <!-- Здесь будут иконки рейтинка В CSS?-->
+  				        <!-- Здесь будут иконки рейтинка В CSS-->
               <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
               <p>Рейтинг: 8,9</p>
   			     </div>
@@ -107,7 +142,7 @@
               <a class="button">Забронировать</a>
   					</p>
   					<div>
-  				        <!-- Здесь будут иконки рейтинка В CSS?-->
+  				        <!-- Здесь будут иконки рейтинка В CSS-->
               <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
               <p>Рейтинг: 9,2</p>
   			     </div>
