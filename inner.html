@@ -21,7 +21,47 @@
   	<main class="container">
   		<section>
   			<h1 class="visually-hidden">Отели Седоны</h1>
-  			  <!-- Здесь будет форма поиска жилья-->
+        <!-- каждый отсек форм в див надо или нет? Пока не оборачивала в див -->
+  			  <form action="https://echo.htmlacademy.ru" method="get">           
+            <fieldset>
+              <legend>Инфраструктура</legend>
+              <ul>          
+                <li class="folder-option">
+                  <label><input type="checkbox" name="pool" checked>Бассейн</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="parking">Парковка</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset> 
+            <fieldset>
+              <legend>Тип жилья</legend>
+              <ul>          
+                <li class="folder-option">
+                  <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="motel" checked>Мотель</label>
+                </li>
+                <li class="folder-option">
+                  <label><input type="checkbox" name="apartments" checked></label>Апартаменты
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <!-- Двойной ползунок делается только в JS? или есть другие варианты? Сделала одинарный, пока не нашла как делается двойной-->
+<!-- Да. Пока только в ЖС. <input type="range"> не поддерживает два тогглика. Поэтому разметить пока есть смысл как-то так: http://prntscr.com/p6ud95 . Возможно для стилизации понадобятся какие-либо обертки. Но это потом. На данном этапе достаточно этого. -->
+              <legend>Стоимость в сутки (Р):</legend>
+              <input type="text" name="cost-from" placeholder="от 0">
+              <input type="text" name="cost-to" placeholder="до 3000">
+              <label class="first-label"></label>
+              <label class="second-label"></label>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
   		</section>
   		<div>
   			<p>Найдено: 3</p>
@@ -32,14 +72,14 @@
   				<li><a href="#">По рейтингу</a></li>
   			</ul>
   			<div>
-  				<!-- Здесь будут две маленькие иконки-->
-<!-- Это тоже ссылки. Они сортируют по убыванию и по возростанию -->
-           <ul>
+  				<ul>
             <!-- НЕ ОТОБРАЖАЕТСЯ КАРТИНКА ниже. Не могу понять почему.   -->
-             <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка от меньшего к большему"></a></li>
-             <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка от большего к меньшему"></a></li>
-           </ul>
-  			</div>
+<!-- Не правильно экспортировала свг.  -->
+<!-- Кроме того, нужно предусмотреть текст для доступности интерфейсов. <span>Сортировка по возростанию</span> и <span>Сортировка по убыванию</span> -->
+             <li><span><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по возрастанию"></a></span></li>
+             <li><span><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по убыванию"></a></span></li>
+                </ul>
+  		   </div>
   		</div>
   		<section>
   			<h2 class="visually-hidden">Доступные отели</h2>
@@ -59,11 +99,9 @@
   					<p class="catalog-item-details">
   						<a class="button">Подробнее</a>
   						<a class="button">Забронировать</a>
-<!-- "Подробнее" и "Забронировать" ссылки -->
   					</p>
   					<div>
-  				        <!-- Здесь будут иконки рейтинка В CSS?-->
-<!-- Для иконок рейтинга нужно предусмотреть разметку (p для звездочек и p для рейтинга) -->
+  				        <!-- Здесь будут иконки рейтинка В CSS-->
               <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
               <p>Рейтинг: 8,5</p>
   			     </div>
@@ -85,7 +123,7 @@
               <a class="button">Забронировать</a>
   					</p>
   					<div>
-  				        <!-- Здесь будут иконки рейтинка В CSS?-->
+  				        <!-- Здесь будут иконки рейтинка В CSS-->
               <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
               <p>Рейтинг: 8,9</p>
   			     </div>
@@ -107,7 +145,7 @@
               <a class="button">Забронировать</a>
   					</p>
   					<div>
-  				        <!-- Здесь будут иконки рейтинка В CSS?-->
+  				        <!-- Здесь будут иконки рейтинка В CSS-->
               <p><img src="" width="" height="" alt="звездочки рейтинга"></p>
               <p>Рейтинг: 9,2</p>
   			     </div>
@@ -127,10 +165,11 @@
   			</ul>  		
   		<p>
         <!-- НЕ ОТОБРАЖАЕТСЯ КАРТИНКА ниже. Не могу понять почему.   -->
+<!-- Не правильно экспортировала свг.  -->
 
   			Website by
-  			<a href="">
-  				<img src="img/html-academy.svg" width="115" height="74" alt="Логотип HTMLacademy">
+  			<a href="#">
+  				<img src="img/logo-name.svg" width="115" height="74" alt="Логотип HTMLacademy">
   			</a>
   		</p>
   	</footer>

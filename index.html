@@ -18,7 +18,7 @@
   			</ul>
         <div class="promo">
           <!-- Здесь будет большая промо картинка -->
-<!-- Здесь должна быть картинка с текстом Welcome Sedona, размеченная тегом img. Она должна растягивать по высоте весь этот блок, а изображение гор будет на бекграунде. -->
+<!-- Сюда в cSS впишу картинку на бекграунд -->
            <img src="img/welcome.svg" width="459" height="100%353" alt="Welcome to Sedona">
         </div>
   		</nav>
@@ -44,7 +44,8 @@
       <!-- Тройная секция -->
   		<section>
   			<ul>
-          <!-- Я так поняла сюда будем вписывать картинки в CSS.  -->
+          <!--сюда будем вписывать картинки в CSS.  -->
+
   				<li>
   					<h3>Жильё</h3>            
   					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -96,7 +97,28 @@
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button type="button">Поиск гостиницы в Седоне</button>
             <div>
-            <!-- Здесь будет форма поиска гостиницы-->
+            <form action="https://echo.htmlacademy.ru" method="post">
+             
+              <p>
+                <!-- Класс date впишет картинку в поле-->
+                <label for="date-on">Дата заезда</label>
+                <input type="text" name="date-on"  class="date id="date-on" placeholder="24 апреля 2017">
+              </p>
+              <p>
+                <label for="date-off">Дата выезда</label>
+                <input type="text" name="date-off" class="date id="date-off" placeholder="4 июля 2017">              
+              </p>
+              <!-- Сделаем с помощью CSS. <input type="number"> не поддерживается в ИнтернетЭксплоэре. -->
+              <p class="half-left">
+                <label for="adults">Взрослые</label>
+                <input type="text" name="adults" id="adults">
+              </p>
+              <p class="half-right">
+                <label for="children">Дети</label>
+                <input type="text" name="children" id="children">
+              </p>
+              <button type="submit">Найти</button>
+            </form>
             </div>
   		</section>
         <section class="map">
@@ -105,20 +127,22 @@
         </section>
   	</main>
   	<footer>
-  		<p>
-        <a href="#">#visitSEDONA</a>
-      </p>
-      <!-- Я так поняла сюда будем вписывать картинки в CSS.  -->  		
+  	   <p>
+           <a href="#">#visitSEDONA</a>
+       </p>
+      <!-- сюда будем вписывать картинки в CSS.  -->  	
   			<ul>
   				<li><a href="#">Твиттер</a></li>
   				<li><a href="#">Фейсбук</a></li>
   				<li><a href="#">Ютуб</a></li>
   			</ul>  		
   		<p>
-        <!-- НЕ ОТОБРАЖАЕТСЯ КАРТИНКА ниже. Не могу понять почему.   -->
+        <!-- НЕ ОТОБРАЖАЕТСЯ КАРТИНКА ниже. Не могу понять почему??   -->
+<!-- Не правильно экспортировала свг.  -->
+
   			Website by
-  			<a href="">
-  				<img src="img/html-academy.svg" width="115" height="74" alt="Логотип HTMLacademy">
+  			<a href="#">
+  				<img src="img/logo-name.svg" width="115" height="74" alt="Логотип HTMLacademy">
   			</a>
   		</p>
   	</footer>
