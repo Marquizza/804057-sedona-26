@@ -1,0 +1,484 @@
+@font-face {
+	font-family: 'PT Sans'; 
+	font-weight: 400;
+	font-style: normal;	 
+	font-display: swap;
+	src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
+	}
+	
+@font-face {
+	font-family: 'PT Sans'; 
+	font-weight: 700;
+	font-style: normal;	 
+	font-display: swap;
+	src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
+	}
+
+body {
+	font-family: 'PT Sans';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-navigation,
+.infrastructure,
+.house-type,
+.sorting,
+.points,
+.hotels,
+.social,
+.features,
+.advantages {
+	list-style: none; 
+}
+
+
+/* INDEX  */
+
+/* не уверена в правильности написания картинки  */
+.main-navigator {
+	width: 1200px;
+	height: 572px;
+	line-height: 26px;	
+	background: url("../img/background.jpg");
+	background-size: 100%;	
+	text-align: center;
+}
+
+/* не уверена в правильности написания картинки  */
+.promo {	
+	background: url("../img/polygon.svg") no-repeat 0 100%;
+	
+}
+
+.site-navigation {
+	background-color: #ffffff;
+}
+
+.site-navigation a {
+	color: #333333;
+	font-weight: bold;
+}
+
+.general {
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.features-part {
+background-color: #ffffff;
+}
+
+.features-part h2 {
+	text-align: center;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+
+.paragraph {
+	text-align: center;
+	line-height: 24px;
+}
+
+.feature-item {
+	text-align: center;
+}
+
+.feature-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.advantages {
+	background-color: #ededed;
+	text-align: center;
+}
+
+.reason {
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-align: center;
+}
+
+.reason h3 {
+	font-size: 21px;
+	line-height: 21px;	
+}
+
+.hotel-search {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 86px;
+  width: 576px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;	
+  }
+
+.hotel-search:hover {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 86px;
+  width: 576px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #604e43;
+  border: none;	
+  }
+
+  .hotel-search:active {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 86px;
+  width: 576px;
+  text-align: center;
+  color: #857871;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #503e33;
+  border: none;	
+  }
+
+
+.button-search {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 60px;
+  width: 460px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;	
+  }
+
+  .button-search:hover {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 60px;
+  width: 460px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #669ec0;
+  border: none;	
+  }
+
+  .button-search:active {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 60px;
+  width: 460px;
+  text-align: center;
+  color: #88b6d1;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #5496bd;
+  border: none;	
+  }
+
+/* не ставится черный цвет подсказок текста внутри формы */
+input[type="text"] {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+  background-color: #f2f2f2;	
+}
+
+input[type="text"]:hover {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ebebeb; 
+}
+
+input[type="text"]:focus {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000; 
+  background-color: #ffffff;
+}
+
+
+.date-black {
+	color: #000000;
+	font-weight: bold;
+}
+
+/* INNER  */
+.hotel-form {
+     background: url("../img/filter-background.jpg") no-repeat 0 100%;
+}
+
+.hotel-form {
+	color: #ffffff;
+}
+
+fieldset {
+  border: none;
+}
+
+.button-show {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 32px;
+  width: 133px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background: transparent;
+  border: 3px solid #ffffff;	
+  }
+
+  .button-show:hover {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  height: 32px;
+  width: 133px;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 3px solid #ffffff;	
+  }
+
+/* ширина не так отображается у кнопок ниже*/
+  .more {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  height: 27px;
+  width: 110px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;	
+  }
+
+   .more:hover {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  height: 27px;
+  width: 110px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #669ec0;
+  border: none;	
+  }
+
+   .more:active {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  height: 27px;
+  width: 110px;
+  text-align: center;
+  color: #88b6d1;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #5496bd;
+  border: none;	
+  }
+
+  .booking {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  height: 27px;
+  width: 142px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;	
+  }
+
+  .booking:hover {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  height: 27px;
+  width: 142px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #604e43;
+  border: none;	
+  }
+
+  .booking:active {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  height: 27px;
+  width: 142px;
+  text-align: center;
+  color: #857871;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #503e33;
+  border: none;	
+  }
+
+/* Не понятно почему не работает vertical-align */
+  .rates {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  height: 27px;
+  width: 110px;
+  background-color: #f2f2f2;
+  border: none;
+  text-align: center;
+  vertical-align: middle;	
+  }
+
+  .active-price a {
+  	color: #81b3d2;
+  }
+
+
+  .for-type a {
+  	color: #b2b2b2;
+  }
+
+
+  .for-type a:hover {
+  	color: #81b3d2;
+  	border-bottom: 2px dashed #81b3d2;
+  }
+
+
+  .for-type a:active {
+  	color: #81b3d2;
+  }
+
+ 
+  .for-rates a {
+  	color: #b2b2b2;
+  }
+
+
+  .for-rates a:hover {
+  	color: #81b3d2;
+  	border-bottom: 2px dashed #81b3d2;
+  }
+
+
+  .for-rates a:active {
+  	color: #81b3d2;
+  }
+
+  .resorts:hover {
+    color: #81b3d2;
+  }
+
+  .resorts:active {
+    color: #b2b2b2;
+  }
+
+/* Не отображаются картинки соцсетей. Квадраты горизонтально не расположены хотя стоит display: inline-block */
+  .social-item {
+    display: inline-block;
+  	width: 46px;
+  	height: 48px;
+  	background-color: #81b3d2; 
+    vertical-align: middle; 	
+  }
+
+  .twitter {
+  	background-image: : url("../img/t.svg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  }
+
+   .fb {
+  	background-image: : url("../img/fb-icon.svg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  }
+
+  .youtube {
+  	background-image: : url("../img/youtube.svg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  }
+
+
+/* Тут большая сложность как заменить цвет в свг */
+  .svg-pic-up {
+    fill: #cacaca;
+  }
+
+  .svg-pic-up:hover {
+    fill: #000000;
+  } 
+  .svg-pic-up:active {
+    fill: #81b3d2;
+  }
+
+  .svg-pic-down {
+    fill: #cacaca;
+  }
+
+  .svg-pic-down:hover {
+    fill: #000000;
+  } 
+
+  .svg-pic-down:active {
+    fill: #81b3d2;
+  }
+
+/* плюс сам по себе значет htmlacademy выглядит криво. */
+
+.logo-html {
+  fill: #000000;
+}
+
+.logo-html:hover {
+  fill: #81b3d2;
+}
+
+.logo-html:active {
+  fill: #bdbbbc;
+}
+  
+  
