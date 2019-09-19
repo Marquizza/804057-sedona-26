@@ -23,7 +23,6 @@ body {
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
-	
 }
 
 a {
@@ -41,7 +40,6 @@ a {
 .advantages {
 	list-style: none; 
 }
-
 
 /* INDEX  */
 
@@ -480,5 +478,3 @@ fieldset {
 .logo-html:active {
   fill: #bdbbbc;
 }
-  
-  
