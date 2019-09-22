@@ -43,34 +43,90 @@ a {
 
 /* INDEX  */
 
-/* не уверена в правильности написания картинки  */
-.main-navigator {
-	width: 1200px;
-	height: 572px;
-	line-height: 26px;	
-	background: url("../img/background.jpg");
-	background-size: 100%;	
+
+.main-navigator,
+ .inner-navigator {
+	line-height: 26px;		
 	text-align: center;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* не уверена в правильности написания картинки  */
+
 .promo {	
-	background: url("../img/polygon.svg") no-repeat 0 100%;
+	background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 	
 }
 
 .site-navigation {
 	background-color: #ffffff;
+  order: -1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+
 }
+
+.site-navigation li {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 
 .site-navigation a {
 	color: #333333;
 	font-weight: bold;
 }
 
+
+/* Тут не отцентровывается как на макете */
+.site-navigation li:first-child {
+  margin-left: 73px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-left: 0;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: 390;
+}
+
+.site-navigation li:nth-child(4) {
+  margin-right: 73px;
+}
+
+
+/* Тут я не понимаю как правильно отсчитать на сколько пикселей сдвинуть влево/вправо */
+
+.logo-position {
+  position: absolute;
+  top: 0px;
+
+}
+
+.container-center {
+  width: 1200px;
+  left: auto;
+  right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .general {
 	background-color: #ffffff;
 	text-align: center;
+  height: 217px;
+  padding-top: 63px;
+  box-sizing: border-box;
+
 }
 
 .features-part {
@@ -103,10 +159,31 @@ background-color: #ffffff;
 	text-align: center;
 }
 
+/*криво выглядит*/
 .reason {
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Тут получилось отцентрировать прописав два раза паддинги в features и дочерние итемы*/
+
+.features {
+  display: flex;
+  width: 1200px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features .feature-item {
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .reason h3 {
@@ -149,11 +226,14 @@ background-color: #ffffff;
   height: 86px;
   width: 576px;
   text-align: center;
-  color: #857871;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: #503e33;
   border: none;	
+  }
+
+  .hotel-search:active span {
+    opacity: 0.3;
   }
 
 
@@ -192,37 +272,30 @@ background-color: #ffffff;
   height: 60px;
   width: 460px;
   text-align: center;
-  color: #88b6d1;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: #5496bd;
   border: none;	
   }
 
-/* не ставится черный цвет подсказок текста внутри формы */
-input[type="text"] {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #000000;
-  background-color: #f2f2f2;	
-}
+  .button-search:active span {
+    opacity: 0.3;
+  }
 
-input[type="text"]:hover {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
-  background-color: #ebebeb; 
-}
 
-input[type="text"]:focus {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000; 
-  background-color: #ffffff;
-}
+
+.date::-webkit-input-placeholder       {color: #000000; font-weight: 700;}
+.date::-moz-placeholder                {color: #000000; font-weight: 700;}
+.date:-moz-placeholder                 {color: #000000; font-weight: 700;}
+.date:-ms-input-placeholder            {color: #000000; font-weight: 700;}
+.date:focus::-webkit-input-placeholder {color: #000000; font-weight: 700;}
+.date:focus::-moz-placeholder          {color: #000000; font-weight: 700;}
+.date:focus:-moz-placeholder           {color: #000000; font-weight: 700;}
+.date:focus:-ms-input-placeholder      {color: #000000; font-weight: 700;}
+.date:hover::-webkit-input-placeholder {color: #000000; font-weight: 700;}
+.date:hover::-moz-placeholder          {color: #000000; font-weight: 700;}
+.date:hover:-moz-placeholder           {color: #000000; font-weight: 700;}
+.date:hover:-ms-input-placeholder      {color: #000000; font-weight: 700;}
 
 
 .date-black {
@@ -230,13 +303,27 @@ input[type="text"]:focus {
 	font-weight: bold;
 }
 
-/* INNER  */
-.hotel-form {
-     background: url("../img/filter-background.jpg") no-repeat 0 100%;
+.map {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+
+
+/* INNER  */
+
 
 .hotel-form {
 	color: #ffffff;
+  background: url("../img/filter-background.jpg") no-repeat 0 100%;
+  display: flex;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 fieldset {
@@ -271,7 +358,52 @@ fieldset {
   border: 3px solid #ffffff;	
   }
 
-/* ширина не так отображается у кнопок ниже*/
+.section-found {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.found {
+  display: flex;
+  width: 1200px;
+  padding-left: 73px;
+
+}
+
+
+.sorting {
+  display: flex;
+  width: 352px;
+  justify-content: space-around;
+}
+
+.points {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 35px;
+  height: 11px
+  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 73px;
+}
+
+/* padding-left такой же как и у .found, а отступ меньше выглядит */
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 73px;
+}
+
+
   .more {
   font: inherit;
   font-size: 14px;
@@ -356,7 +488,6 @@ fieldset {
   border: none;	
   }
 
-/* Не понятно почему не работает vertical-align */
   .rates {
   font: inherit;
   font-size: 14px;
@@ -366,7 +497,7 @@ fieldset {
   background-color: #f2f2f2;
   border: none;
   text-align: center;
-  vertical-align: middle;	
+
   }
 
   .active-price a {
@@ -413,68 +544,58 @@ fieldset {
     color: #b2b2b2;
   }
 
-/* Не отображаются картинки соцсетей. Квадраты горизонтально не расположены хотя стоит display: inline-block */
-  .social-item {
-    display: inline-block;
-  	width: 46px;
-  	height: 48px;
-  	background-color: #81b3d2; 
-    vertical-align: middle; 	
-  }
+/* футер*/
 
-  .twitter {
-  	background-image: : url("../img/t.svg");
-  	background-position: center;
-  	background-repeat: no-repeat;
-  }
-
-   .fb {
-  	background-image: : url("../img/fb-icon.svg");
-  	background-position: center;
-  	background-repeat: no-repeat;
-  }
-
-  .youtube {
-  	background-image: : url("../img/youtube.svg");
-  	background-position: center;
-  	background-repeat: no-repeat;
-  }
-
-
-/* Тут большая сложность как заменить цвет в свг */
-  .svg-pic-up {
-    fill: #cacaca;
-  }
-
-  .svg-pic-up:hover {
-    fill: #000000;
-  } 
-  .svg-pic-up:active {
-    fill: #81b3d2;
-  }
-
-  .svg-pic-down {
-    fill: #cacaca;
-  }
-
-  .svg-pic-down:hover {
-    fill: #000000;
-  } 
-
-  .svg-pic-down:active {
-    fill: #81b3d2;
-  }
-
-/* плюс сам по себе значет htmlacademy выглядит криво. */
-
-.logo-html {
-  fill: #000000;
+.features-part {
+  display: flex;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-around;
 }
 
-.logo-html:hover {
+/* тут будут соцсети */
+  .social {
+    
+  }
+
+  .twitter svg {
+  	
+  	
+  }
+
+   .fb svg {
+  	
+  
+  }
+
+  .youtube svg {
+  	
+  	
+  }
+
+  
+  .svg-pic-up:hover svg {
+    fill: #000000;
+  } 
+  .svg-pic-up:active svg {
+    fill: #81b3d2;
+  }
+
+ 
+  .svg-pic-active:hover svg {
+    fill: #000000;
+  } 
+
+  .svg-pic-active:active svg {
+    fill: #81b3d2;
+  }
+
+/* Лого academy*/
+.logo-html:hover svg {
   fill: #81b3d2;
 }
 
-.logo-html:active {
+.logo-html:active svg {
   fill: #bdbbbc;
 }
