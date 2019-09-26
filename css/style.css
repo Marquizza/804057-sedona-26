@@ -15,7 +15,7 @@
 	}
 
 body {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans', 'Arial', serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
@@ -41,6 +41,10 @@ a {
 	list-style: none; 
 }
 
+.visually-hidden {
+
+}
+
 /* INDEX  */
 
 
@@ -48,37 +52,43 @@ a {
  .inner-navigator {
 	line-height: 26px;		
 	text-align: center;
-  width: 1200px;
+  
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
+.main-navigator {
+  position: relative;
+}
 
+/* тут что то не то  */
 .promo {	
 	background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-	
+	height: 511px;
+}
+
+.promo img {
+  padding-top: 78px;
 }
 
 .site-navigation {
 	background-color: #ffffff;
-  order: -1;
+
   display: flex;
   margin: 0;
+  padding: 20px 0 22px 0;
+  
+
+}
+
+.site-navigation ul {
+  margin: 0;
   padding: 0;
-  justify-content: space-between;
-
 }
-
-.site-navigation li {
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-
 
 .site-navigation a {
 	color: #333333;
@@ -88,19 +98,23 @@ a {
 
 /* Тут не отцентровывается как на макете */
 .site-navigation li:first-child {
-  margin-left: 73px;
+  margin: 0 0 0 73px;
+  padding: 0;
 }
 
 .site-navigation li:nth-child(2) {
-  margin-left: 0;
+  margin: 0 0 0 148px;
+  padding: 0;
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 390;
+  margin: 0 0 0 390px;
+  padding: 0;
 }
 
 .site-navigation li:nth-child(4) {
-  margin-right: 73px;
+  margin: 0 73px 0 auto;
+  padding: 0;
 }
 
 
@@ -109,76 +123,149 @@ a {
 .logo-position {
   position: absolute;
   top: 0px;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.container {
+width: 1200px;
+margin: 0 auto;
 
 }
 
+.block-item {
+padding: 47px 60px 65px 60px;
+}
+
+.block-head {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+}
+
+.block {
+ padding: 0;
+ margin: 0; 
+  
+}
+
 .container-center {
-  width: 1200px;
-  left: auto;
-  right: auto;
+  margin-top: 61px;
+  margin-bottom: 58px;
   display: flex;
   flex-direction: column;
 }
 
+.center {
+  padding: 0;
+  margin: 0 0 37px 0;
+  line-height: 26px;
+}
+
+.center-paragraph {
+  padding: 0;
+  margin: 0;
+}
+
 .general {
 	background-color: #ffffff;
-	text-align: center;
-  height: 217px;
-  padding-top: 63px;
+	text-align: center;  
   box-sizing: border-box;
 
 }
 
+.features-one {
+  padding-top: 59px;
+  padding-bottom: 86px;
+}
+
+
 .features-part {
 background-color: #ffffff;
+display: flex;
+  flex-direction: column;
+  align-items: center;  
+  padding-top: 54px;
+  padding-bottom: 138px;
 }
 
 .features-part h2 {
 	text-align: center;
 	font-size: 30px;
 	line-height: 36px;
+  padding: 0;
+  margin: 0 0 36px 0;
+  
+}
+.item-first {
+  margin: 0;
+  padding: 0px;
 }
 
+.paragraph-first {
+  margin: 0;
+  padding: 0;
+}
 
 .paragraph {
 	text-align: center;
 	line-height: 24px;
+  padding: 0;
+  margin: 0 0 52px 0;
 }
 
 .feature-item {
 	text-align: center;
+  margin: 0;
+  padding: 0;
+  
 }
 
-.feature-item h3 {
+.feature-item svg {
+
+}
+
+.feature-item .block-head {
 	font-size: 21px;
 	line-height: 21px;
+  padding: 0;
+  margin: 0;
+  margin-top: 46px;
+  margin-bottom: 28px;
 }
 
 .advantages {
 	background-color: #ededed;
 	text-align: center;
+  padding: 0;
+  margin: 0;
+  
+  
 }
 
-/*криво выглядит*/
+.feature-item .block {
+  margin-bottom: 61px;
+}
+
+
+
 .reason {
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-align: center;
   display: flex;
   flex-direction: row;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 256px;  
 }
 
 /* Тут получилось отцентрировать прописав два раза паддинги в features и дочерние итемы*/
 
 .features {
   display: flex;
-  width: 1200px;
+  
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
 .features .feature-item {
@@ -306,10 +393,12 @@ background-color: #ffffff;
 .map {
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+
 }
+
+
+
+
 
 
 
@@ -320,9 +409,7 @@ background-color: #ffffff;
 	color: #ffffff;
   background: url("../img/filter-background.jpg") no-repeat 0 100%;
   display: flex;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+
 
 }
 
@@ -361,14 +448,10 @@ fieldset {
 .section-found {
   display: flex;
   flex-direction: row;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .found {
   display: flex;
-  width: 1200px;
   padding-left: 73px;
 
 }
@@ -391,15 +474,12 @@ fieldset {
   margin-right: 73px;
 }
 
-/* padding-left такой же как и у .found, а отступ меньше выглядит */
+
 
 .hotels {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   padding: 0;
-  margin-right: auto;
-  margin-left: auto;
   padding-left: 73px;
 }
 
@@ -546,17 +626,43 @@ fieldset {
 
 /* футер*/
 
+
 .features-part {
   display: flex;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
   justify-content: space-around;
 }
 
+.footer-part {
+  display: flex;
+  flex-direction: row;
+  width: 965px;
+  justify-content: space-between;
+}
+
+
+
 /* тут будут соцсети */
   .social {
-    
+    display: flex;
+     flex-wrap: wrap;
+    width: 151px;
+    height: 48px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+
+/* НЕ ОТОБРАЖАЮТСЯ ИКОНКИ */
+
+  .social-item {
+    display: flex;
+    width: 46px;
+    height: 48px;
+
+    background-color: #81b3d2;
+    align-items: center;
+    justify-content: center;
   }
 
   .twitter svg {
