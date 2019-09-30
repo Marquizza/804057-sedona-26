@@ -129,7 +129,7 @@ a {
 }
 
 
-/* Тут я не понимаю как правильно отсчитать на сколько пикселей сдвинуть влево/вправо */
+
 
 .logo-position {
   position: absolute;
@@ -759,7 +759,7 @@ margin-bottom: 30px;
 .visitdesona {
   font-size: 21px;
   line-height: 26px;
-
+  font-weight: bold;
 }
 
 /* Фильтр для второй страницы */
