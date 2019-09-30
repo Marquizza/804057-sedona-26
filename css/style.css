@@ -762,6 +762,16 @@ margin-bottom: 30px;
   font-weight: bold;
 }
 
+
+/* Где то тут ошибка */
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+.web {
+  margin-right: 8px;
+}
+
 /* Фильтр для второй страницы */
 
 /*  правильно ли*/
