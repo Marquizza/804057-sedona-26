@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8">
       <title>Отели Седоны</title>
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
    </head>
    <body>
@@ -18,7 +18,7 @@
                   <li><a href="#">Информация</a></li>
                   <li><a href="#">Фото и видео</a></li>
                   <li><a href="#">Карта штата</a></li>
-                  <li><a>Гостиницы</a></li>
+                  <li><a><span class="active-hotels">Гостиницы</span></a></li>
                </ul>
             </nav>
          </header>
@@ -28,14 +28,14 @@
                <form action="https://echo.htmlacademy.ru" method="get">
                   <div class="main-forms">
                      <div class="filter-main">
-                        <div class="filter-type-title">Инфраструктура</div>
+                        <div class="filter-type-title">Инфраструктура:</div>
                         <ul class="infrastructure">
                            <li class="folder-option">
-                              <input type="checkbox" name="pool" class="infro visually-hidden" id="swimmingpool" checked>
+                              <input type="checkbox" name="pool" class="infro visually-hidden" id="swimmingpool" checked disabled>
                               <label class="infro_label" for="swimmingpool">Бассейн</label>
                            </li>
                            <li class="folder-option">
-                              <input type="checkbox" name="parking" class="infro visually-hidden" id="parking_car">
+                              <input type="checkbox" name="parking" class="infro visually-hidden" id="parking_car" disabled>
                               <label class="infro_label" for="parking_car">Парковка</label>
                            </li>
                            <li class="folder-option">
@@ -94,17 +94,18 @@
                      <!-- Мелкие трехугольники -->
                      <li>
                         <a href="#" class="svg-pic-up">
-                           <svg fill="#cacaca" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          <svg fill="#cacaca" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                               width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                              <polygon points="5.5,0 0,10 11,10 "/>
-                           </svg>
+                              <polyline points="5.5,10 0,0 11,0 "/>
+                           </svg> 
                         </a>
                      </li>
                      <li>
                         <a href="#" class="svg-pic-active">
+                           
                            <svg fill="#cacaca" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                               width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                              <polyline points="5.5,10 0,0 11,0 "/>
+                              <polygon points="5.5,0 0,10 11,10 "/>
                            </svg>
                         </a>
                      </li>
