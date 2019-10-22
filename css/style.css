@@ -187,6 +187,7 @@ padding: 48px 48px 59px 50px;
 
 h1.center {
   color: #000000;
+  font-size: 21px;
 }
 
 .center-paragraph {
@@ -534,8 +535,8 @@ h3.item-first {
 
 .polygons {
   border-bottom: 1px solid #e5e5e5;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 19px;
+  padding-bottom: 13px;
 }
 
 .sorting {
@@ -557,7 +558,9 @@ h3.item-first {
   margin-right: 73px;
 }
 
-
+iframe {
+  border: 0;
+}
 
 .hotels {
   display: flex;
