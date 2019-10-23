@@ -772,7 +772,8 @@ iframe {
 }
    
 .resorts {
-  font-size: 21px;    
+  font-size: 21px; 
+  color: #000000;   
 }
 
 .resorts:hover {
@@ -812,10 +813,6 @@ iframe {
   margin: 0;
   margin-bottom: 6px;
   padding: 0
-}
-
-.center-hotels .resorts {
-  color: #000000;
 }
 
 .catalog-item-details {
