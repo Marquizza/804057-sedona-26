@@ -127,6 +127,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .site-navigation ul {
@@ -313,9 +314,7 @@ h3.item-first {
   margin: 0;  
 }
 
-.feature-item .block {
-  margin-bottom: 58px;
-}
+
 
 .number-head {
   margin: 0 0 22px 0;
@@ -348,7 +347,8 @@ h3.item-first {
   padding-left: 57px;
   padding-right: 57px;
   padding-top: 48px;
-  width: 33.3333%;  
+  width: 33.3333%; 
+  padding-bottom: 58px; 
 }
 
 .reason h3 {
